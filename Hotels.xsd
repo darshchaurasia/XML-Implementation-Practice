@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Hotels.xsd -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="http://example.com/hotels"
-           xmlns="http://example.com/hotels"
-           elementFormDefault="qualified"
+           elementFormDefault="unqualified"
            attributeFormDefault="unqualified">
 
   <!-- === root element === -->
@@ -14,14 +12,14 @@
           <xs:complexType>
             <xs:sequence>
 
-              <!-- === Hotel → Name === -->
+              <!-- Name (exactly one) -->
               <xs:element name="Name" type="xs:string"/>
 
-              <!-- === one‑or‑more Phone numbers === -->
+              <!-- one‑or‑more Phone numbers -->
               <xs:element name="Phone" type="xs:string"
                           minOccurs="1" maxOccurs="unbounded"/>
 
-              <!-- === Address block === -->
+              <!-- Address block -->
               <xs:element name="Address">
                 <xs:complexType>
                   <xs:sequence>
@@ -32,7 +30,7 @@
                     <xs:element name="Zip"    type="xs:string"/>
                   </xs:sequence>
 
-                  <!-- required attribute on Address -->
+                  <!-- REQUIRED attribute on Address -->
                   <xs:attribute name="NearestAirport"
                                 type="xs:string"
                                 use="required"/>
@@ -41,7 +39,7 @@
 
             </xs:sequence>
 
-            <!-- optional attribute on Hotel -->
+            <!-- OPTIONAL attribute on Hotel -->
             <xs:attribute name="Rating"
                           type="xs:decimal"
                           use="optional"/>
