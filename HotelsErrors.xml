@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Hotel>   <!-- error #1: wrong root element -->
+<Hotel xmlns="http://www.asu.edu/hotels"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.asu.edu/hotels https://darshchaurasia.github.io/XML-Implementation-Practice/Hotels.xsd">
+  <!-- error #1: wrong root element -->
 
   <!-- 1 ─ Westin (valid entry, used as baseline) -->
   <Hotel Rating="4.2">
@@ -139,5 +142,4 @@
       <Zip>85253</Zip>
     </Address>
   </Hotel>
-
 </Hotel>
