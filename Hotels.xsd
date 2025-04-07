@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Hotels.xsd -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           elementFormDefault="unqualified"
-           attributeFormDefault="unqualified">
+           targetNamespace="http://www.asu.edu/hotels"
+           elementFormDefault="qualified"
+           xmlns="http://www.asu.edu/hotels">
 
   <!-- === root element === -->
   <xs:element name="Hotels">
