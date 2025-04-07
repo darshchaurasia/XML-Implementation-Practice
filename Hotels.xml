@@ -2,7 +2,6 @@
 <Hotels xmlns="http://www.asu.edu/hotels"
         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
         xsi:schemaLocation="http://www.asu.edu/hotels https://darshchaurasia.github.io/XML-Implementation-Practice/Hotels.xsd">
-  <!-- 1 -->
   <Hotel Rating="4.2">
     <Name>Westin</Name>
     <Phone>480-968-8885</Phone>
@@ -15,8 +14,6 @@
       <Zip>85281</Zip>
     </Address>
   </Hotel>
-
-  <!-- 2 -->
   <Hotel Rating="4.6">
     <Name>Arizona Biltmore</Name>
     <Phone>602-955-6600</Phone>
@@ -28,8 +25,6 @@
       <Zip>85016</Zip>
     </Address>
   </Hotel>
-
-  <!-- 3 -->
   <Hotel Rating="4.5">
     <Name>JW Marriott Camelback Inn</Name>
     <Phone>480-948-1700</Phone>
@@ -41,8 +36,6 @@
       <Zip>85253</Zip>
     </Address>
   </Hotel>
-
-  <!-- 4 -->
   <Hotel Rating="4.4">
     <Name>Hyatt Regency Scottsdale</Name>
     <Phone>480-444-1234</Phone>
@@ -54,13 +47,11 @@
       <Zip>85258</Zip>
     </Address>
   </Hotel>
-
-  <!-- 5 – demonstrates optional NearstAirport (omitted) -->
   <Hotel Rating="4.7">
     <Name>Fairmont Scottsdale Princess</Name>
     <Phone>480-585-4848</Phone>
     <Phone>888-765-4321</Phone>
-    <Address>
+    <Address NearstAirport="PHX">
       <Number>7575</Number>
       <Street>E Princess Dr</Street>
       <City>Scottsdale</City>
@@ -68,8 +59,6 @@
       <Zip>85255</Zip>
     </Address>
   </Hotel>
-
-  <!-- 6 -->
   <Hotel Rating="4.3">
     <Name>Hotel Valley Ho</Name>
     <Phone>480-376-2600</Phone>
@@ -81,8 +70,6 @@
       <Zip>85251</Zip>
     </Address>
   </Hotel>
-
-  <!-- 7 -->
   <Hotel Rating="4.1">
     <Name>Hilton Phoenix Resort at the Peak</Name>
     <Phone>602-997-2626</Phone>
@@ -94,8 +81,6 @@
       <Zip>85020</Zip>
     </Address>
   </Hotel>
-
-  <!-- 8 -->
   <Hotel Rating="4.0">
     <Name>Embassy Suites by Hilton Tempe</Name>
     <Phone>480-897-7444</Phone>
@@ -107,8 +92,6 @@
       <Zip>85282</Zip>
     </Address>
   </Hotel>
-
-  <!-- 9 -->
   <Hotel Rating="3.9">
     <Name>La Quinta Inn Phoenix Sky Harbor</Name>
     <Phone>480-966-6500</Phone>
@@ -120,8 +103,6 @@
       <Zip>85281</Zip>
     </Address>
   </Hotel>
-
-  <!-- 10 -->
   <Hotel Rating="4.8">
     <Name>The Phoenician</Name>
     <Phone>480-941-8200</Phone>
