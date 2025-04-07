@@ -1,23 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!--  Hotels.xsd  -->
+<!-- Hotels.xsd -->
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           elementFormDefault="qualified">
+           targetNamespace="http://example.com/hotels"
+           xmlns="http://example.com/hotels"
+           elementFormDefault="qualified"
+           attributeFormDefault="unqualified">
 
-  <!-- root --------------------------------------------------------------->
+  <!-- root ---------------------------------------------------------------->
   <xs:element name="Hotels">
     <xs:complexType>
       <xs:sequence>
         <xs:element name="Hotel" maxOccurs="unbounded">
           <xs:complexType>
             <xs:sequence>
+              <!-- Name (exactly one) --------------------------------------->
+              <xs:element name="Name" type="xs:string"/>
 
-              <xs:element name="Name"  type="xs:string"/>
-
-              <!-- at least one phone number -->
-              <xs:element name="Phone" type="xs:string"
+              <!-- Phone (one or more) ------------------------------------->
+              <xs:element name="Phone"
+                          type="xs:string"
                           minOccurs="1" maxOccurs="unbounded"/>
 
-              <!-- Address block -->
+              <!-- Address -------------------------------------------------->
               <xs:element name="Address">
                 <xs:complexType>
                   <xs:sequence>
@@ -28,16 +32,15 @@
                     <xs:element name="Zip"    type="xs:string"/>
                   </xs:sequence>
 
-                  <!-- REQUIRED attribute -->
+                  <!-- REQUIRED attribute on Address ----------------------->
                   <xs:attribute name="NearestAirport"
                                 type="xs:string"
                                 use="required"/>
                 </xs:complexType>
               </xs:element>
-
             </xs:sequence>
 
-            <!-- OPTIONAL attribute on Hotel -->
+            <!-- OPTIONAL attribute on Hotel ------------------------------->
             <xs:attribute name="Rating"
                           type="xs:decimal"
                           use="optional"/>
