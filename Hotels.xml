@@ -134,17 +134,4 @@
     </Address>
   </Hotel>
 
-  <!-- 11 -->
-  <Hotel Rating="4.9">
-    <Name>Sanctuary Camelback Mountain</Name>
-    <Phone>855-245-2051</Phone>
-    <Address NearstAirport="PHX">
-      <Number>5700</Number>
-      <Street>E McDonald Dr</Street>
-      <City>Paradise Valley</City>
-      <State>AZ</State>
-      <Zip>85253</Zip>
-    </Address>
-  </Hotel>
-
 </Hotels>
