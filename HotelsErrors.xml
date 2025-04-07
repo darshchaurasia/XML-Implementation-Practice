@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Hotel>  <!--  wrong root -->
+<Hotel>   <!-- error #1: wrong root element -->
+
+  <!-- 1 ─ Westin (valid entry, used as baseline) -->
   <Hotel Rating="4.2">
     <Name>Westin</Name>
     <Phone>480-968-8885</Phone>
@@ -13,11 +15,11 @@
     </Address>
   </Hotel>
 
-  <!--  missing NearestAirport -->
+  <!-- 2 ─ missing required attribute NearestAirport  (error #2) -->
   <Hotel Rating="4.6">
     <Name>Arizona Biltmore</Name>
     <Phone>602-955-6600</Phone>
-    <Address>
+    <Address>                    <!-- no NearestAirport -->
       <Number>2400</Number>
       <Street>E Missouri Ave</Street>
       <City>Phoenix</City>
@@ -26,7 +28,7 @@
     </Address>
   </Hotel>
 
-  <!--  missing Phone -->
+  <!-- 3 ─ no Phone element at all  (error #3) -->
   <Hotel Rating="4.5">
     <Name>JW Marriott Camelback Inn</Name>
     <Address NearestAirport="PHX">
@@ -38,7 +40,7 @@
     </Address>
   </Hotel>
 
-  <!--  Address not closed -->
+  <!-- 4 ─ Address tag never closed  (error #4) -->
   <Hotel Rating="4.4">
     <Name>Hyatt Regency Scottsdale</Name>
     <Phone>480-444-1234</Phone>
@@ -48,10 +50,10 @@
       <City>Scottsdale</City>
       <State>AZ</State>
       <Zip>85258</Zip>
-    <!-- missing </Address> -->
+    <!-- missing </Address> here -->
   </Hotel>
 
-  <!--  duplicate Name -->
+  <!-- 5 ─ duplicate Name element  (error #5) -->
   <Hotel Rating="4.7">
     <Name>Fairmont Scottsdale Princess</Name>
     <Name>Duplicate Name</Name>
@@ -64,4 +66,78 @@
       <Zip>85255</Zip>
     </Address>
   </Hotel>
+
+  <!-- 6 ─ remaining hotels are well‑formed but still inside wrong root -->
+  <Hotel Rating="4.3">
+    <Name>Hotel Valley Ho</Name>
+    <Phone>480-376-2600</Phone>
+    <Address NearestAirport="PHX">
+      <Number>6850</Number>
+      <Street>E Main St</Street>
+      <City>Scottsdale</City>
+      <State>AZ</State>
+      <Zip>85251</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel Rating="4.1">
+    <Name>Hilton Phoenix Resort at the Peak</Name>
+    <Phone>602-997-2626</Phone>
+    <Address NearestAirport="PHX">
+      <Number>7677</Number>
+      <Street>N 16th St</Street>
+      <City>Phoenix</City>
+      <State>AZ</State>
+      <Zip>85020</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel>
+    <Name>Embassy Suites by Hilton Tempe</Name>
+    <Phone>480-897-7444</Phone>
+    <Address NearestAirport="PHX">
+      <Number>4400</Number>
+      <Street>S Rural Rd</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85282</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel Rating="3.9">
+    <Name>La Quinta Inn Phoenix Sky Harbor</Name>
+    <Phone>480-966-6500</Phone>
+    <Address NearestAirport="Sky Harbor">
+      <Number>911</Number>
+      <Street>S 48th St</Street>
+      <City>Tempe</City>
+      <State>AZ</State>
+      <Zip>85281</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel Rating="4.8">
+    <Name>The Phoenician</Name>
+    <Phone>480-941-8200</Phone>
+    <Address NearestAirport="PHX">
+      <Number>6000</Number>
+      <Street>E Camelback Rd</Street>
+      <City>Scottsdale</City>
+      <State>AZ</State>
+      <Zip>85251</Zip>
+    </Address>
+  </Hotel>
+
+  <Hotel Rating="4.9">
+    <Name>Sanctuary Camelback Mountain</Name>
+    <Phone>855-245-2051</Phone>
+    <Address NearestAirport="PHX">
+      <Number>5700</Number>
+      <Street>E McDonald Dr</Street>
+      <City>Paradise Valley</City>
+      <State>AZ</State>
+      <Zip>85253</Zip>
+    </Address>
+  </Hotel>
+
 </Hotel>
