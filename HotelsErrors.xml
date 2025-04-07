@@ -6,7 +6,7 @@
     <Name>Westin</Name>
     <Phone>480-968-8885</Phone>
     <Phone>800-937-8461</Phone>
-    <Address NearestAirport="Sky Harbor">
+    <Address NearstAirport="Sky Harbor">
       <Number>11</Number>
       <Street>E. 7th St</Street>
       <City>Tempe</City>
@@ -31,7 +31,7 @@
   <!-- 3 ─ no Phone element at all  (error #3) -->
   <Hotel Rating="4.5">
     <Name>JW Marriott Camelback Inn</Name>
-    <Address NearestAirport="PHX">
+    <Address NearstAirport="PHX">
       <Number>5402</Number>
       <Street>E Lincoln Dr</Street>
       <City>Scottsdale</City>
@@ -44,7 +44,7 @@
   <Hotel Rating="4.4">
     <Name>Hyatt Regency Scottsdale</Name>
     <Phone>480-444-1234</Phone>
-    <Address NearestAirport="PHX">
+    <Address NearstAirport="PHX">
       <Number>7500</Number>
       <Street>E Doubletree Ranch Rd</Street>
       <City>Scottsdale</City>
@@ -58,7 +58,7 @@
     <Name>Fairmont Scottsdale Princess</Name>
     <Name>Duplicate Name</Name>
     <Phone>480-585-4848</Phone>
-    <Address NearestAirport="PHX">
+    <Address NearstAirport="PHX">
       <Number>7575</Number>
       <Street>E Princess Dr</Street>
       <City>Scottsdale</City>
@@ -71,7 +71,7 @@
   <Hotel Rating="4.3">
     <Name>Hotel Valley Ho</Name>
     <Phone>480-376-2600</Phone>
-    <Address NearestAirport="PHX">
+    <Address NearstAirport="PHX">
       <Number>6850</Number>
       <Street>E Main St</Street>
       <City>Scottsdale</City>
@@ -83,7 +83,7 @@
   <Hotel Rating="4.1">
     <Name>Hilton Phoenix Resort at the Peak</Name>
     <Phone>602-997-2626</Phone>
-    <Address NearestAirport="PHX">
+    <Address NearstAirport="PHX">
       <Number>7677</Number>
       <Street>N 16th St</Street>
       <City>Phoenix</City>
@@ -95,7 +95,7 @@
   <Hotel>
     <Name>Embassy Suites by Hilton Tempe</Name>
     <Phone>480-897-7444</Phone>
-    <Address NearestAirport="PHX">
+    <Address NearstAirport="PHX">
       <Number>4400</Number>
       <Street>S Rural Rd</Street>
       <City>Tempe</City>
@@ -107,7 +107,7 @@
   <Hotel Rating="3.9">
     <Name>La Quinta Inn Phoenix Sky Harbor</Name>
     <Phone>480-966-6500</Phone>
-    <Address NearestAirport="Sky Harbor">
+    <Address NearstAirport="Sky Harbor">
       <Number>911</Number>
       <Street>S 48th St</Street>
       <City>Tempe</City>
@@ -119,7 +119,7 @@
   <Hotel Rating="4.8">
     <Name>The Phoenician</Name>
     <Phone>480-941-8200</Phone>
-    <Address NearestAirport="PHX">
+    <Address NearstAirport="PHX">
       <Number>6000</Number>
       <Street>E Camelback Rd</Street>
       <City>Scottsdale</City>
@@ -131,7 +131,7 @@
   <Hotel Rating="4.9">
     <Name>Sanctuary Camelback Mountain</Name>
     <Phone>855-245-2051</Phone>
-    <Address NearestAirport="PHX">
+    <Address NearstAirport="PHX">
       <Number>5700</Number>
       <Street>E McDonald Dr</Street>
       <City>Paradise Valley</City>
